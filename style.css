@@ -603,6 +603,49 @@ body {
 } 
 
 /* Products Detailed */
+
+.underNav2 {
+  background-color: #f1edea;
+}
+
+.underNavLinks2 {
+  text-align: center;
+  position: relative;
+  top: 50px;
+  word-spacing: 5px;
+}
+
+.underNavLinks2 a {
+  color: #84A941;
+  text-decoration: none;
+}
+
+.underNav2 h1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 90px;
+}
+.underNav2 h1:before, .underNav2 h1:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #e5e2df;;
+  margin: auto;
+}
+.underNav2 h1:before {
+  margin-right: 35px
+}
+.underNav2 h1:after {
+  margin-left: 35px
+}
+ 
+.wrapper {
+  margin-top: 120px;
+  margin-left: 100px;
+  width: 90%;
+  text-align: center;
+  background-color: white;
+  height: 1110px;
+}
  
 .image-gallery {
   margin: 0 auto;
@@ -619,6 +662,9 @@ body {
 }
  
 .primary {
+  position: relative;
+  right: 215px;
+  top: 15px;
   width: 600px;
   height: 400px;
   background-color: #cccccc;
@@ -628,15 +674,235 @@ body {
 }
  
 .thumbnail:hover .thumbnail-image, .selected .thumbnail-image {
-  border: 4px solid #FFF;
+  border: 4px solid black;
 }
  
 .thumbnail-image {
+  position: relative;
+  right: 200px;
+  top: 20px;
   width: 100px;
-  height: 100px;
+  height: 140px;
   margin: 20px auto;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   border: 4px solid transparent;
+}
+
+.detailed-products {
+  position: relative;
+  bottom: 600px;
+  left: 900px;
+  width: 500px;
+}
+
+.detailed-products h2 {
+  position: absolute;
+  top: -20px;
+}
+
+.btnColor button {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    border: 2px solid silver;
+    border-radius: 25px;
+    background-color: white;
+    padding: 5px 20px;
+    width: 200px;
+}
+
+.btnColor h1 {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  background: darkgray;
+  border-radius: 50%;
+}
+
+.btnColor span {
+  margin-top: 3px;
+  margin-left: 15px;
+}
+
+#btn-wraper {
+  display: flex;
+  position: absolute;
+  top: 180px;
+  left: -200px;
+  border: 2px solid silver;
+  border-radius: 25px;
+  width: 150px;
+  height: 35px;
+  justify-content: center;
+  margin-left: 40%;
+  margin-top: 10px;
+}
+
+#btn-decrease {
+  position: relative;
+  left: 30px;
+  top: -5px;
+}
+
+#btn-increase {
+  position: relative;
+  right: 30px;
+  top: -5px;
+}
+
+#btn-wraper button {
+    border: none;
+    background-color: white;
+    font-size: 25px;
+    padding: 0 15px;
+    position: relative;
+    bottom: 3px;
+}
+
+#btn-wraper h1 {
+    position: relative;
+    bottom: 90px;
+    font-size: 25px;
+
+}
+
+.btn-card {
+    position: relative;
+    bottom: 35px;
+    left: 100px;
+}
+
+.btn-card button {
+  position: relative;
+  top: 225px;
+  right: 100px;
+    background-color: #84BC22;
+    color: #FFF;
+    border: 1px solid silver;
+    border-radius: 15px;
+    width: 140px;
+    height: 35px;
+}
+
+.detailed-text {
+  position: relative;
+  top: 250px;
+  width: 400px;
+  text-align: left;
+}
+
+.read-more-btn {
+  position: relative;
+  top: 270px;
+  right: 211px;
+  border: none;
+  color: #8DC131;
+  background: none;
+}
+
+.moreText {
+  display: none;
+}
+
+.detailed-text.show-more .moreText {
+  display: inline;
+}
+
+.socialLinks {
+  position: relative;
+  top: 300px;
+  right: 142px;
+  word-spacing: 25px;
+  color: silver;
+}
+
+.socialLinks a {
+  text-decoration: none;
+  color: silver;
+}
+
+.socialLinks a:hover {
+  color: #8DC131;
+}
+
+/* TABS */
+
+.mytabs {
+  display: flex;
+  position: relative;
+  top: 350px;
+  right: 925px;
+  flex-wrap: wrap;
+  width: 1418px;
+  margin: 50px auto;
+  padding: 25px;
+}
+.mytabs input[type="radio"] {
+  display: none;
+}
+.mytabs label {
+  position: relative;
+  left: 450px;
+  padding: 25px;
+  font-weight: bold;
+  color: silver;
+  border-radius: 15px 15px 0 0;
+}
+
+.mytabs .tab {
+  width: 100%;
+  padding: 20px;
+  background: #262a32;
+  color: #D4D5D6;
+  order: 1;
+  display: none;
+}
+
+.mytabs .tab p {
+  width: 750px;
+  text-align: left;
+}
+
+.mytabs .tab h2 {
+  font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+  display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+  background: #262a32;
+  color: white;
+}
+
+.popularItems2 {
+  height: 750px;
+  background-color: #F1EDEA;
+}
+
+.popularItems2 h1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  color: black;
+  position: relative;
+  top: 100px;
+}
+
+.popularItems2 h1:before, .popularItems2 h1:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #e5e2df;;
+  margin: auto 40px;
+}
+
+.popularItems2 h1:before {
+  margin-right: 65px
+}
+
+.popularItems2 h1:after {
+  margin-left: 65px
 }
