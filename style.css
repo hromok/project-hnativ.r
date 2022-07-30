@@ -81,7 +81,25 @@ body {
 .megamenu {
     background: #262a32;
     top: 85px;
-    left: 40px;
+    right: 1px;
+}
+
+.megamenu-box a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+
+.list-group a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.megamenu, .list-group a:hover {
+  background: none;
+  color: #84A941;
 }
 
 .title-megamenu {
@@ -98,13 +116,27 @@ body {
 
 .list-group2 {
     margin-top: 27px;
+    
 }
 
-.dropdownSearch {
-        position: absolute;
-        left: -10px;
-        top: 60px;
-        width: 300px;
+.langBox {
+  width: 200px;
+  padding: 10px;
+}
+
+.langBox button {
+  margin-left: 10px;
+}
+
+.currencyBox {
+  width: 100px;
+  padding: 5px;
+
+}
+
+.currencyBox button {
+  margin-left: 35px;
+  margin-bottom: 15px;
 }
 
 
@@ -122,6 +154,13 @@ body {
     background-color: white;
     margin-left: 25px;
     cursor: pointer;
+}
+
+#visibilityBtn {
+  position: relative;
+  bottom: 90px;
+  left: 310px;
+  cursor: pointer;
 }
 
 .popup{
@@ -291,20 +330,26 @@ body {
 
   /* Carousel */
 
+  .carousel1 {
+    width: 1100px;
+    left: 200px;
+    top: 20px;
+  }
+
   .carousel-text h1 {
     position: relative;
-    bottom: 370px;
+    bottom: 250px;
     width: 600px;
     height: 92px;
-    right: 150px;
+    right: 100px;
     font-size: 48px;
     text-align: left;
   }
 
   .carousel-text p {
     position: relative;
-    bottom: 170px;
-    right: 450px;
+    bottom: 185px;
+    right: 300px;
     
   }
 
@@ -395,6 +440,44 @@ body {
     padding-top: 20px;
   }
 
+  .card-img-top-last {
+    position: relative;
+    right: 37px;
+    bottom: 44px;
+    width: 375px;
+    height: 410px;
+    opacity: .5;
+  }
+
+  .lastCard1 {
+    background: linear-gradient(180deg, pink, violet);
+    position: relative;
+    top: 210px;
+    left: 40px;
+    width: 275px;
+    height: 365px;
+  }
+
+  .lastCardText p {
+    position: absolute;
+    color: #fff;
+    width: 150px;
+    right: 145px;
+  }
+
+  .lastCardText img {
+    position: relative;
+    left: 70px;
+    top: 130px;
+  }
+
+  .lastCardText span {
+    color: #fff;
+    position: relative;
+    top: 135px;
+    left: 90px;
+  }
+ 
   .btnPlus {
     position: relative;
     border: none;

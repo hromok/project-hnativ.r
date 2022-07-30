@@ -1,4 +1,19 @@
+// Login form
+
 let popup = document.getElementById("popup");
+const visibilityBtn = document.getElementById("visibilityBtn");
+visibilityBtn.addEventListener("click", toggleVisibility);
+
+function toggleVisibility() {
+  const passwordInput = document.getElementById("myInput");
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    
+  } else {
+    passwordInput.type = "password";
+  }
+}
+  
 
 function openPopup() {
     popup.classList.add("open-popup");
@@ -7,6 +22,8 @@ function openPopup() {
 function closePopup() {
     popup.classList.remove("open-popup");
 }
+
+// Login form
 
 $(".thumbnail").on("click", function () {
   var clicked = $(this);
@@ -42,6 +59,8 @@ increaseBtn.addEventListener('click', ()=>{
     count ++;
     counter.innerHTML = count;
 })
+
+// Counter
 
 // Read More Button
 
